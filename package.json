@@ -1,0 +1,25 @@
+{
+  "name": "ec1",
+  "version": "1.0.0",
+  "description": "EC1 for 20 winter",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aeri206/SNUSENS-EngineeringClass1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aeri206/SNUSENS-EngineeringClass1/issues"
+  },
+  "homepage": "https://github.com/aeri206/SNUSENS-EngineeringClass1#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.0",
+    "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "animejs": "file:animejs",
+    "fomantic-ui": "^2.8.3"
+  }
+}

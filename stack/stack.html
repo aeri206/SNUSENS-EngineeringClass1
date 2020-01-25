@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="stack.css">
+  <title>2020 동계 공드림 공학교실1</title>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/semantic/dist/semantic.min.css">
+<script src="/semantic/dist/semantic.min.js"></script>
+<script type="module" src="./stack.js"></script>
+</head>
+<body>
+    <div class="ui segment">
+        <h1 class="ui right floated teal header">2020 동계 공드림 공학교실 1</h1>
+        <div class="ui clearing divider"></div>
+        <h3 style="margin-block-start: auto;" class="ui right aligned header">조애리 신가은 김동윤</h3>
+        </div>
+        <div class="ui segment">
+            <div class="ui two column very relaxed grid">
+              <div id="stack-container" class="column" style="border-right:1px solid rgba(34,36,38,.15);">
+                  <h2 class="ui dividing header">
+                      <i class="terminal blue icon"></i>
+                      <div class="ui content">
+                          &nbsp; Stack
+                      </div>
+                  </h2>
+                  <div style="margin:0;" class="ui grid centered">
+                      <button id="createSButton" class="ui teal button">Create</button>
+                      <div class="ui action input">
+                          <input type="text" placeholder="삽입할 숫자를 입력하세요">
+                          <button id="pushButton" class="ui teal button">Push</button>
+                        </div>
+                        <button id="popButton" class="ui teal button">Pop</button>
+                    </div>
+                    <div class="S warning">WARN</div>
+                    <div class="ui column grid">
+                        <div class="nine wide column">
+                        
+                            <div style="margin:0;" class="ui grid container centered">
+                                <div style="text-align:center; padding:0;" class="ui column">
+<div class="window">
+    <button id="clearSButton" class="ui black basic button">Clear</button>
+<div class="S terminal">
+  <p class="command">공학교실에 오신걸 환영합니다 ♥ </p>
+  </div>
+</div>
+                                  </div>
+                                </div>
+                              </div>
+                      <div class="seven wide column initial" id="stack">
+                          <p class ="component-title"> IN / OUT </p>
+                          <div style="margin:0;" class="ui grid container centered">
+                            <div style="padding:0;" class="ui compact segments">
+                              <div class="ui large-number segment null">
+                                <p>NL</p>
+                              </div>
+                              <div class="ui large-number segment null">
+                                <p>NL</p>
+                              </div>
+                              <div class="ui large-number segment null">
+                                <p>NL</p>
+                              </div>
+                              <div class="ui large-number segment null">
+                                <p>NL</p>
+                              </div>
+                              <div class="ui large-number segment null">
+                                <p>NL</p>
+                              </div>
+                            </div>
+                              </div>
+                            </div>
+                           </div>
+              </div>
+              <div id="queue-container" class="column">
+                  <h2 class="ui dividing header">
+                      <i class="purple stream icon"></i>
+                      <div class="content">
+                          &nbsp; Queue
+                      </div>
+                  </h2>
+
+                  <div style="margin:0;" class="ui grid centered">
+                    <button id="createQButton" class="ui teal button">Create</button>
+                    <div class="ui action input">
+                        <input type="text" placeholder="삽입할 숫자를 입력하세요">
+                        <button id="enQButton" class="ui teal button">EnQueue</button>
+                      </div>
+                      <button id="deQButton" class="ui teal button">DeQueue</button>
+                  </div>
+                  <div class="Q warning">WARN</div>
+                  <div class="ui column grid initial" id="queue">
+                    <div class="two wide column">
+                      <p class="component-title" style="position:absolute; right:10px; top:20px;">IN</p></div>
+                          <div class="twelve wide column" id="queueBlock">
+                            
+                            <div class="ui horizontal segments">
+                                <div class="ui segment large-number null">
+                                  <p>NL</p>
+                                </div>
+                                <div class="ui segment large-number null">
+                                  <p>NL</p>
+                                </div>
+                                <div class="ui segment large-number null">
+                                    <p>NL</p>
+                                  </div>
+                                  <div class="ui segment large-number null">
+                                      <p>NL</p>
+                                    </div>
+                                    <div class="ui segment large-number null">
+                                        <p>NL</p>
+                                      </div>
+
+                                </div>                           
+                            
+                          </div>
+                          <div class="two wide column">
+                            <p class="component-title" style="position:absolute; left:0; bottom:35px;">OUT</p></div>
+                          
+                          
+                  </div>
+                  <div class="ui column" style="margin-top: 10px;">
+                      <div class="window">
+                      <div class="Q terminal">
+                          <p class="command">공학교실에 오신걸 환영합니다 ♥ </p>
+                          </div>
+                          </div>
+                        </div>
+              </div>
+            <div class="ui clearing vertical divider">
+              AND
+              </div>
+          </div>
+        </div>
+    
+    
+    
+    
+    </div>
+
+  
+
+      
+</body>
+</html>

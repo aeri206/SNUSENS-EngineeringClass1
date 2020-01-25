@@ -1,0 +1,285 @@
+div#content-box {
+    width:60%;
+    background-color:rgb(240, 240, 240);
+    height:200px;
+    margin:auto;
+}
+
+.ui.segments {
+    border-top-color: rgba(34, 36, 38, 0.15);
+    border-top-style: solid;
+    border-top-width: 1px;
+    border: 1px solid rgba(34, 36, 38, 0.15) !important;
+    
+}
+
+div.warning.exist {
+    visibility:visible;
+}
+
+div.warning {
+    visibility:hidden;
+    text-align:center;
+    padding: 10px;
+    font-weight:800;
+    color:red;
+}
+
+.ui.grid+.grid {
+    margin-top: 0 !important;
+}
+
+div.segment.large-number {
+    
+    font-size:1.5rem !important;
+    font-weight:600;
+}
+div#queue div.segment.large-number {
+  padding:0.5em 0 0.5em 0;
+  text-align:center;
+}
+
+div#stack div.segment.large-number {
+  padding: 1em 2em 1em 2em;
+}
+
+div.initial#stack
+ {
+    visibility:hidden !important;
+}
+
+div.initial#queue {
+  display:none;
+}
+
+
+div#queue > div#queueBlock > div > p {
+  vertical-align: middle;
+}
+button.ui#clearSButton {
+    position: absolute;
+    top:4px;
+    right:1px;
+    padding:0.3em 0.7em 0.3em 0.7em;
+
+}
+
+div#queue > div.wide.column {
+  padding-top:0;
+}
+
+
+
+div.ui.segments > div.segment.null > p {
+    visibility:hidden;
+}
+
+div.ui.segments > div.ui.null {
+    background: rgba(230, 230, 230, 0.527);
+}
+
+p.component-title {
+    text-align:center;
+    font-weight:bold;
+    font-size:2rem;
+    margin:0 0 0.3em 0;
+}
+.window {
+    border-radius: 5px;
+    background: #222;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+  }
+  .window:before {
+    content: ' ';
+    display: block;
+    height: 30px;
+    background: #C6C6C6;
+  }
+  .window:after {
+    content: '. . .';
+    position: absolute;
+    left: 6px;
+    top: -12px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 96px;
+    color: #fff;
+    line-height: 0;
+    letter-spacing: -12px;
+  }
+  
+  .terminal {
+    margin: 10px 20px 10px 10px;
+    font-family: monospace;
+    font-size: 16px;
+    color: #22da26;
+  }
+  .terminal .command {
+    white-space: nowrap;
+    overflow: hidden;
+    animation-name: write-command;
+    animation-duration: 5s;
+    text-align:left;
+    margin: 0 0 0.1em;
+  }
+  .terminal .command:before {
+    content: '$ ';
+    color: #22da26;
+  }
+  .terminal .log {
+    white-space: nowrap;
+    overflow: hidden;
+    text-align:left;
+    margin:0 0 0.3em;
+  }
+  
+  @keyframes write-command {
+      from {
+          width:0%;
+      }
+      to {
+          width:100%;
+      }
+  }
+  @keyframes write-log {
+    0% {
+      height: 0;
+    }
+    16% {
+      height: 0;
+    }
+    17% {
+      height: 18px;
+    }
+    33% {
+      height: 18px;
+    }
+    34% {
+      height: 37px;
+    }
+    51% {
+      height: 37px;
+    }
+    52% {
+      height: 55px;
+    }
+    69% {
+      height: 55px;
+    }
+    70% {
+      height: 74px;
+    }
+    87% {
+      height: 74px;
+    }
+    88% {
+      height: 92px;
+    }
+    88% {
+      height: 92px;
+    }
+    99% {
+      height: 92px;
+    }
+    100% {
+      height: 110px;
+    }
+  }
+  
+/*
+  @import url("https://fonts.googleapis.com/css?family=Fira+Sans:300");
+/* html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #9664e1;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 12px;
+} 
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+.Q.terminal,
+.Q.terminal:before,
+.Q.terminal:after,
+.Q.terminal > p:after {
+  position: absolute;
+}
+.Q.terminal {
+  width: 80vw;
+  padding: 26px 4px 4px;
+  border-radius: 5px;
+  background: linear-gradient(#f6f6f6, #d3d3d3 20px, #7e7e7e 20px, #7e7e7e 21px, #393456 21px);
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.25);
+  transition: all 0.5s ease;
+}
+.Q.terminal:before {
+  content: " ";
+  width: 10px;
+  height: 10px;
+  margin: -20px 0 0 5px;
+  border-radius: 5px;
+  background: #fc625d;
+  box-shadow: 0 0 0 1px #de413e, 15px 0 #fec041, 15px 0 0 1px #dda035, 30px 0 #35cc4b, 30px 0 0 1px #28aa36;
+}
+.Q.terminal:after {
+  width: 100%;
+  content: "Pure CSS Terminal";
+  top: 0;
+  text-align: center;
+  color: #4c4c4c;
+  line-height: 20px;
+}
+.Q.terminal > p {
+  color: #fff;
+}
+.Q.terminal > p:before {
+  content: "$";
+  margin-right: 8px;
+  opacity: 0.5;
+  line-height: 18px;
+}
+.Q.terminal > p:after {
+  -webkit-animation: blink 1s linear 1s infinite;
+          animation: blink 1s linear 1s infinite;
+  content: " ";
+  width: 8px;
+  height: 18px;
+  margin-left: 1px;
+  background: #fec041;
+}
+@-webkit-keyframes blink {
+  0% {
+    background: rgba(254,192,65,0);
+  }
+  50% {
+    background: rgba(254,192,65,0);
+  }
+  51% {
+    background: #fec041;
+  }
+  100% {
+    background: #fec041;
+  }
+}
+@keyframes blink {
+  0% {
+    background: rgba(254,192,65,0);
+  }
+  50% {
+    background: rgba(254,192,65,0);
+  }
+  51% {
+    background: #fec041;
+  }
+  100% {
+    background: #fec041;
+  }
+}
+
+*/
