@@ -6,6 +6,9 @@
     "type": "git",
     "url": "git+https://github.com/aeri206/SNUSENS-EngineeringClass1.git"
   },
+  "scripts": {
+    "start": "open stack/stack.html"
+  },
   "author": "",
   "license": "ISC",
   "bugs": {
